@@ -10,4 +10,6 @@ pylint
 scipy
 statsmodels
 scikit-learn
+jupyter
+plotly
 
