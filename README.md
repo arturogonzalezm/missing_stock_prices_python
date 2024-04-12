@@ -29,5 +29,11 @@ $$
 50 \times \max(2 - d, 0)
 $$
 
+```latex
+\begin{align*}
+50 \times \max(2 - d, 0)
+\end{align*}
+```
+
 
 
