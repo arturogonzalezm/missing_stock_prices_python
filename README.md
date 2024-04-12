@@ -1,7 +1,5 @@
 # Missing Stock Prices - HackerRank Challenge
 
-# Problem Statement
-
 A time series of a stock's highest price during a trading day at the New York Stock Exchange is provided to you. Each test case has day's highest prices missing for certain days. Analyze the data to identify the missing price for those particular days.
 
 ## Input Format
@@ -25,9 +23,6 @@ The scoring will be based on the mean of the magnitude of the percentage differe
 d = Summation of abs((expected price - computed price)/expected price) x 100
 ```
 
-50 x max(2 - d, 0)
-
-`50 * max(2 - d, 0)`
 
 $$
 50 \times \max(2 - d, 0)
