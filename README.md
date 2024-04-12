@@ -1,6 +1,8 @@
 # Missing Stock Prices - HackerRank Challenge
 
-A time series of a stock's highest price during a trading day at the New York Stock Exchange is provided to you. Each test case has day's highest prices missing for certain days. Analyze the data to identify the missing price for those particular days.
+A time series of a stock's highest price during a trading day at the New York Stock Exchange is provided to you. 
+Each test case has day's highest prices missing for certain days. 
+Analyse the data to identify the missing price for those particular days.
 
 ## Input Format
 
@@ -25,7 +27,7 @@ d = Summation of abs((expected price - computed price)/expected price) x 100
 
 ## Scoring Criteria
 
-The expression: $$50 \times \max(2 - d, 0)$$ is a mathematical formula used in various contexts, often for scoring or evaluating performance based on a deviation measure 'd'. Here's a breakdown of each part of this formula:
+The expression: $$50 \times \max(2 - d, 0)$$ Is a mathematical formula used in various contexts, often for scoring or evaluating performance based on a deviation measure 'd'. Here's a breakdown of each part of this formula:
 
 - **50**: This is a constant multiplier used to scale the result of the function to a desired range or magnitude.
 
