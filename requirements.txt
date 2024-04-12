@@ -1,0 +1,13 @@
+numpy
+pandas
+pytest
+codecov
+pytest-cov
+coverage
+ruff
+pytest-mock
+pylint
+scipy
+statsmodels
+scikit-learn
+
