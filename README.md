@@ -25,15 +25,29 @@ d = Summation of abs((expected price - computed price)/expected price) x 100
 
 ## Scoring Criteria
 
+The expression $$50 \times \max(2 - d, 0)$$ is a mathematical formula used in various contexts, often for scoring or evaluating performance based on a deviation measure 'd'. Here's a breakdown of each part of this formula:
+
+- **50**: This is a constant multiplier used to scale the result of the function to a desired range or magnitude.
+
+- **\(\max(2 - d, 0)\)**: This is the key function in the expression. It's the maximum function which compares two values and returns the larger of the two. In this case, it compares \(2 - d\) and \(0\).
+
+  - **\(2 - d\)**: Here, \(d\) represents a deviation or error from a target or expected value. \(2 - d\) calculates a value that decreases as \(d\) increases. In many scoring systems, \(d\) could represent an error rate or a percentage difference, and the number 2 is a threshold value.
+  
+  - **0**: This ensures that the expression does not return a negative number. If \(d\) exceeds 2, making \(2 - d\) negative, the \(\max\) function will return 0.
+
+**Putting it together:**
+
+- When \(d\) (the deviation) is less than or equal to 2, \(2 - d\) will be positive and therefore \(50 \times \max(2 - d, 0)\) will yield a scaled positive score based on how much smaller \(d\) is than 2.
+
+- When \(d\) is greater than 2, \(2 - d\) becomes negative, and \(\max(2 - d, 0)\) results in 0. Consequently, \(50 \times 0\) is 0, reflecting a failure to stay within the acceptable deviation range.
+
+**In summary**, this formula is used to calculate a score that decreases with an increase in the deviation \(d\) beyond a set point (2 in this case), down to a minimum score of 0. It’s commonly used in contexts where there's a penalty for exceeding a certain error threshold, ensuring scores are non-negative.
+
+
 $$
 50 \times \max(2 - d, 0)
 $$
 
-```latex
-\begin{align*}
-50 \times \max(2 - d, 0)
-\end{align*}
-```
 
 
 
