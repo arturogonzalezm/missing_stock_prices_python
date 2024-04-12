@@ -1,1 +1,1 @@
-# missing_stock_prices_python
+# Missing Stock Prices - HackerRank Challenge
