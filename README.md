@@ -23,6 +23,7 @@ The scoring will be based on the mean of the magnitude of the percentage differe
 d = Summation of abs((expected price - computed price)/expected price) x 100
 ```
 
+## Scoring Criteria
 
 $$
 50 \times \max(2 - d, 0)
