@@ -12,4 +12,5 @@ statsmodels
 scikit-learn
 jupyter
 plotly
+seaborn
 
