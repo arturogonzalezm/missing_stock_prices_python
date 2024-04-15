@@ -45,7 +45,38 @@ The expression: $$50 \times \max(2 - d, 0)$$ Is a mathematical formula used in v
 
 **Note**, the above is used to calculate a score that decreases with an increase in the deviation \(d\) beyond a set point (2 in this case), down to a minimum score of 0. It’s commonly used in contexts where there's a penalty for exceeding a certain error threshold, ensuring scores are non-negative.
 
+## Diagram
 
+```mermaid
+sequenceDiagram
+    participant Main
+    participant ParseData
+    participant ArimaInterpolation
+    participant GradientBoostingInterpolation
+    participant RandomForestInterpolation
+    participant SplineInterpolation
+    participant LinearInterpolation
+
+    Main->>+ParseData: Parse data from file
+    ParseData-->>-Main: Return DataFrame & missing indices
+
+    Main->>+ArimaInterpolation: Apply ARIMA interpolation
+    ArimaInterpolation-->>-Main: Return interpolated DataFrame
+
+    Main->>+GradientBoostingInterpolation: Apply Gradient Boosting interpolation
+    GradientBoostingInterpolation-->>-Main: Return interpolated DataFrame
+
+    Main->>+RandomForestInterpolation: Apply Random Forest interpolation
+    RandomForestInterpolation-->>-Main: Return interpolated DataFrame
+
+    Main->>+SplineInterpolation: Apply Spline interpolation
+    SplineInterpolation-->>-Main: Return interpolated DataFrame
+
+    Main->>+LinearInterpolation: Apply Linear interpolation
+    LinearInterpolation-->>-Main: Return interpolated DataFrame
+
+    Main->>Main: Combine results and output
+```
 
 
 
